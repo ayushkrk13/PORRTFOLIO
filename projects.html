@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Ayush Kumar Raunak</title>
+  <meta name="description" content="Selected technical builds and projects by Ayush Kumar Raunak. WebGL, Deep Learning, and System Architecture.">
+  
+  <!-- Typography CDN -->
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@400&f[]=khand@700&display=swap" rel="stylesheet">
+  
+  <!-- Local Styles -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Interactive Script -->
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+  <!-- Background Interactive Particles -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="nav-container">
+      <div class="logo">
+        <a href="index.html">A.K.R.</a>
+      </div>
+      <div class="header-contact">
+        <a href="mailto:ayushkumarraunak6@gmail.com">ayushkumarraunak6@gmail.com</a>
+        <span class="contact-separator">//</span>
+        <span class="contact-phone">840****117</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container-wide">
+    
+    <!-- Page Title -->
+    <h1 style="margin-bottom: var(--space-md);">THE BUILDS.</h1>
+
+    <!-- Projects List -->
+    <div class="projects-list">
+      
+      <!-- Project 01 -->
+      <article class="project-item">
+        <div class="project-num">01</div>
+        <div class="project-info">
+          <h3>INDI STARS</h3>
+          <p>
+            An award-winning geospatial analytical dashboard developed for the national hackathon. The system parses and visualizes dense satellite imagery overlays, rendering localized infrastructure growth indices over a 10-year span. Built with high-performance raster rendering to stream vector tiles efficiently to low-bandwidth environments.
+          </p>
+          <ul class="project-tech">
+            <li>React</li>
+            <li>Go</li>
+            <li>PostGIS</li>
+            <li>Mapbox GL</li>
+            <li>GDAL</li>
+          </ul>
+        </div>
+        <div class="project-description">
+          <p style="font-size: 1rem; opacity: 0.7; margin-bottom: 0;">
+            Developed high-precision tiling algorithms that reduced tile loading times by 40% under extreme latency emulation.
+          </p>
+          <div>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">VIEW SOURCE</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 02 -->
+      <article class="project-item">
+        <div class="project-num">02</div>
+        <div class="project-info">
+          <h3>3D GESTURE PARTICLES</h3>
+          <p>
+            An experimental interactive system that uses consumer-grade webcams to translate finger tracking vectors into complex fluid dynamics simulations. Built using customized vertex and fragment shaders in GLSL, computing over half a million active particle coordinates directly on the GPU in real time.
+          </p>
+          <ul class="project-tech">
+            <li>WebGL</li>
+            <li>Three.js</li>
+            <li>MediaPipe</li>
+            <li>GLSL Shaders</li>
+            <li>Vite</li>
+          </ul>
+        </div>
+        <div class="project-description">
+          <p style="font-size: 1rem; opacity: 0.7; margin-bottom: 0;">
+            Achieved persistent 60 FPS performance by shifting coordinate calculations entirely into custom GPU framebuffer textures.
+          </p>
+          <div>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">RUN EXPERIMENT</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 03 -->
+      <article class="project-item">
+        <div class="project-num">03</div>
+        <div class="project-info">
+          <h3>NEURAL STYLE ENGINE</h3>
+          <p>
+            A high-throughput API gateway facilitating real-time style transformation and image-to-image synthesis. It runs fine-tuned Stable Diffusion pipelines deployed on serverless GPU containers. Integrates a custom cache layers for latent noise maps to accelerate generation loops.
+          </p>
+          <ul class="project-tech">
+            <li>PyTorch</li>
+            <li>FastAPI</li>
+            <li>Stable Diffusion</li>
+            <li>Docker</li>
+            <li>Redis</li>
+          </ul>
+        </div>
+        <div class="project-description">
+          <p style="font-size: 1rem; opacity: 0.7; margin-bottom: 0;">
+            Reduced cold-start model load latency to under 1.8 seconds using aggressive model-state slicing and custom serialization.
+          </p>
+          <div>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">EXPLORE ENGINE</a>
+          </div>
+        </div>
+    </div>
+
+    <!-- Contact & Feedback Section -->
+    <section class="contact-feedback-section container-wide">
+      <div class="contact-feedback-grid">
+        <div class="form-intro">
+          <h2>CONNECT & TRANSACT</h2>
+          <p>
+            Whether you have project proposals, feedback on my neural pipelines, or simply want to query a system node—drop a dispatch line below.
+          </p>
+        </div>
+        <div class="form-wrapper">
+          <form class="contact-feedback-form" action="" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">IDENTIFIER / NAME</label>
+                <input type="text" id="contact-name" class="input-text" placeholder="YOUR NAME OR ENTITY" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">CONTACT PATH / EMAIL</label>
+                <input type="email" id="contact-email" class="input-text" placeholder="EMAIL@DOMAIN.COM" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">DISPATCH MESSAGE / FEEDBACK</label>
+              <textarea id="contact-message" class="input-text textarea-input" rows="5" placeholder="WRITE YOUR FEEDBACK OR INQUIRY..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">TRANSMIT DISPATCH</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <span class="copyright">© 2026 AYUSH KUMAR RAUNAK. ALL RIGHTS RESERVED.</span>
+      <ul class="footer-links">
+        <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GITHUB</a></li>
+        <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LINKEDIN</a></li>
+        <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">TWITTER</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
